@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_homepage"
+    android:id="@+id/pageTotale">
+    <ImageView
+
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/ic_baseline_plumbing_24"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        app:tint="@color/white" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/identifiant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:padding="20dp"
+            android:background="#30ffffff"
+            android:hint="Identifiant"
+            android:text=""/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                app:passwordToggleEnabled="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleTint="@color/white"
+                android:textColorHint="@color/white"
+                app:hintTextColor="@color/white"
+                app:errorTextColor="@color/white"
+                app:prefixTextColor="@color/white"
+                app:suffixTextColor="@color/white"
+                app:placeholderTextColor="@color/white"
+                app:boxStrokeErrorColor="@color/white"
+                app:counterOverflowTextColor="@color/white"
+                app:counterTextColor="@color/white"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@color/white"
+                app:helperTextTextColor="@color/white"
+                tools:ignore="MissingConstraints">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="#30ffffff"
+                    android:padding="20dp"
+                    android:hint="Mot de passe"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:id="@+id/password"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:background="@drawable/rounded_button"
+        android:theme="@style/Button.White"
+        android:id="@+id/connexion"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:text="@string/connexion"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/white" />
+
+    <Button
+        android:background="@drawable/rounded_button"
+        android:theme="@style/Button.White"
+        android:id="@+id/retour"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:focusable="true"
+        android:textAllCaps="false"
+        android:text="Retour"
+        android:backgroundTint="@color/white"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center|bottom">
+        <TextView
+            android:id="@+id/dgs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:text="@string/from"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_homepage"
+    android:id="@+id/pageTotale">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_warning_24"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/warning"
+        app:tint="@color/white" />
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/ic_baseline_speed_24"
+        android:layout_gravity="center"
+        app:tint="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:id="@+id/nomCompteur"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="LeNom"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:background="#30ffffff"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textSize="20dp"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/ville"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="LaVille"
+            android:background="#30ffffff"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/codepostal"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="LeCodePostal"
+            android:background="#30ffffff"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:id="@+id/rue"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:text="L'adresse"
+            android:background="#30ffffff"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/indexAncien"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="IndexAncien"
+            android:background="#30ffffff"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/indexNouveau"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:hint="Nouvel index"
+            android:background="#30ffffff"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#30ffffff"
+        android:layout_marginTop="20dp"
+        android:layout_margin="25dp"
+        android:layout_gravity="center"
+        android:id="@+id/call">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_baseline_phone_enabled_24"
+            android:layout_marginLeft="40dp"/>
+        <TextView
+            android:id="@+id/telNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00 00 00 00 00"
+            android:layout_marginTop="12dp"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="25dp"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:background="@drawable/rounded_button"
+            android:theme="@style/Button.White"
+            android:id="@+id/valider"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginRight="20dp"
+            android:textSize="15sp"
+            android:focusable="true"
+            android:textAllCaps="false"
+            android:text="Valider"
+            android:backgroundTint="@color/white"/>
+
+        <Button
+            android:background="@drawable/rounded_button"
+            android:theme="@style/Button.White"
+            android:id="@+id/annuler"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:focusable="true"
+            android:textAllCaps="false"
+            android:text="Annuler"
+            android:backgroundTint="@color/white"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="defaultValue">
+        <item>Tous les relevés</item>
+        <item>Relevés faits</item>
+        <item>Relevés à faire</item>
+    </string-array>
+</resources>

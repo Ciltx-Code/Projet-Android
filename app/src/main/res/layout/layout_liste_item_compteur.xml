@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10sp"
+    android:paddingTop="10sp"
+    android:paddingBottom="10sp">
+    <ImageView
+        android:id="@+id/validate"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_baseline_check_circle_outline_24"
+        android:layout_gravity="center"
+        android:tint="@color/black"
+        android:layout_marginRight="25dp"/>
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/nom"
+            android:text="LeNom"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/rue"
+            android:text="LaRue"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/ville"
+            android:text="LaVille"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/codepostal"
+            android:text="CodePostal"/>
+
+
+
+    </LinearLayout>
+    <View android:layout_width="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/black"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/indexAncien"
+            android:text="Ancien Index"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/indexNouveau"
+            android:text="Nouvel Index"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nomReleveur"
+            android:text="Nom du Releveur"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+    $
+
+
+
+
+
+</LinearLayout>

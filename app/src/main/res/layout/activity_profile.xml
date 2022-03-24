@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_homepage"
+    android:id="@+id/pageTotale">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/logout"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center|end"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ic_baseline_exit_to_app_24"
+            android:backgroundTint="@color/white"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp"/>
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:foreground="@drawable/ic_baseline_add_a_photo_24"
+        android:foregroundGravity="bottom|right"
+        android:layout_gravity="center">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/bg"
+            android:src="@drawable/ic_baseline_account_circle_24"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:id="@+id/identifiant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#30ffffff"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Identifiant"
+            android:text=""/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#30ffffff"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:inputType="textPassword"
+            android:hint="Mot de passe"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/enregistrer"
+        android:layout_gravity="center"
+        android:theme="@style/Button.White"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="80dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:focusable="true"
+        android:textAllCaps="false"
+        android:text="@string/enregistrer"
+        android:backgroundTint="@color/white"/>
+
+    <Button
+        android:background="@drawable/rounded_button"
+        android:id="@+id/retour"
+        android:layout_gravity="center"
+        android:theme="@style/Button.White"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:focusable="true"
+        android:textAllCaps="false"
+        android:text="Retour"
+        android:backgroundTint="@color/white"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center|bottom">
+        <TextView
+            android:id="@+id/dgs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:text="@string/from"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

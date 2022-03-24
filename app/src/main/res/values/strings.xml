@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Relevés Compteurs</string>
+    <string name="welcome_to_nreleveur_compteur">Bienvenue dans\nReleveur Compteur</string>
+    <string name="connexion">Connexion</string>
+    <string name="creerCompte">Créer un compte</string>
+    <string name="from">From\nDGS</string>
+    <string name="bienvenue">Bienvenue\n...</string>
+    <string name="inscription">Inscription</string>
+    <string name="enregistrer">Enregistrer</string>
+    <string name="deconnexion">Déconnexion</string>/>
+</resources>
